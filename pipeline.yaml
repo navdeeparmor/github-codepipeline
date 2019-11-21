@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 # *** Change this to something useful for you!
-Description: github-codepipeline
+Description: codepipeline-test
 
 Parameters:
   # *** This value must always be passed in when creating / updating stack
@@ -24,7 +24,7 @@ Parameters:
 
   GitHubRepo:
     Type: String
-    Default: github-codepipeline
+    Default: codepipeline-test
     AllowedPattern: "[A-Za-z0-9-]+"
 
   GitHubBranch:
@@ -35,7 +35,7 @@ Parameters:
   # *** The stack name for the actual application we're deploying
   ApplicationStackName:
     Type: String
-    Default: github-codepipeline-app
+    Default: codepipeline-test-app
     AllowedPattern: "[A-Za-z0-9-]+"
 
 Resources:
