@@ -28,14 +28,26 @@ Resources:
           Properties:
             Path: /test
             Method: get
-
+            
+  CodepipelineLambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          Effect: Allow
+          Principal:
+            Service: codepipeline.amazonaws.com
+          Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AdministratorAccess #TODO: Reduce permissions
 Outputs:
   SamApi:
     Description: "API Gateway endpoint URL for test stage for an empty function"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Codepipeline/test/"
   CodepipelineLambda:
     Description: "SamLambda Function ARN"
-    Value: !GetAtt CodepipelineLambda.Arn
+    Value: !GetAtt CodepipelineLambdaRole.Arn
   SamLambdaFunctionIamRole:
     Description: "Implicit IAM Role created for an empty function"
-    Value: !GetAtt SamLambdaFunctionRole.Arn
+    Value: !GetAtt CodepipelineLambdaRole.Arn
