@@ -3,7 +3,10 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: github-codepipeline-app
 
 # This is just here as an example resource
-
+Globals:
+  Function:
+    Timeout: 10
+    
 Resources:
   ApplicationBucket:
     Type: AWS::S3::Bucket
