@@ -2,7 +2,7 @@
 
 # *** Change this to the desired name of the Cloudformation stack of 
 # your Pipeline (*not* the stack name of your app)
-CODEPIPELINE_STACK_NAME="codepipeline-test"
+CODEPIPELINE_STACK_NAME="codepipeline-test-1"
 
 if [ -z ${1} ]
 then
