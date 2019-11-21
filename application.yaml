@@ -29,7 +29,7 @@ Resources:
             Path: /test
             Method: get
             
-  CodepipelineLambdaRole:
+  CodepipelineLambdaRole1:
     Type: AWS::IAM::Role
     Properties:
       AssumeRolePolicyDocument:
@@ -47,7 +47,7 @@ Outputs:
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Codepipeline/test/"
   CodepipelineLambda:
     Description: "SamLambda Function ARN"
-    Value: !GetAtt CodepipelineLambdaRole.Arn
+    Value: !GetAtt CodepipelineLambdaRole1.Arn
   SamLambdaFunctionIamRole:
     Description: "Implicit IAM Role created for an empty function"
-    Value: !GetAtt CodepipelineLambdaRole.Arn
+    Value: !GetAtt CodepipelineLambdaRole1.Arn
