@@ -22,7 +22,7 @@ namespace CodepipelineLambda
         {
             var body = new Dictionary<string, string>
             {
-                { "message", "hello world here c" }
+                { "message", "hello world here co" }
             };
 
 

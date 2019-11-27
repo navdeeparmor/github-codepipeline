@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/navdeepav/dev/repos/github-codepipeline/CodepipelineLambda/CodepipelineLambda/CodepipelineLambda.csproj": {}
+  },
+  "projects": {
+    "/home/navdeepav/dev/repos/github-codepipeline/CodepipelineLambda/CodepipelineLambda/CodepipelineLambda.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/navdeepav/dev/repos/github-codepipeline/CodepipelineLambda/CodepipelineLambda/CodepipelineLambda.csproj",
+        "projectName": "CodepipelineLambda",
+        "projectPath": "/home/navdeepav/dev/repos/github-codepipeline/CodepipelineLambda/CodepipelineLambda/CodepipelineLambda.csproj",
+        "packagesPath": "/home/navdeepav/.nuget/packages/",
+        "outputPath": "/home/navdeepav/dev/repos/github-codepipeline/CodepipelineLambda/CodepipelineLambda/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/navdeepav/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Amazon.Lambda.APIGatewayEvents": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Amazon.Lambda.Core": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Amazon.Lambda.Serialization.Json": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
