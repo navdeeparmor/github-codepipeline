@@ -135,7 +135,7 @@ Resources:
             Type: PLAINTEXT
             Value: staging
         Image: !Ref BuildImage
-        Type: LINUX_CONTAINER
+        Type: WINDOWS_CONTAINER
       ServiceRole: !Ref CodeBuildRole
       Source:
         Type: CODEPIPELINE
