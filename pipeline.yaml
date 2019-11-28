@@ -45,7 +45,7 @@ Parameters:
   BuildComputeType:
     Type: String
     Default: "BUILD_GENERAL1_SMALL"
-    Description: The build compute type to use for building the app
+    Description: The build compute type to use for building the application
   BuildImage:
     Type: String
     Default: "aws/codebuild/standard:2.0"
