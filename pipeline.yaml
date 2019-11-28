@@ -48,7 +48,7 @@ Parameters:
     Description: The build compute type to use for building the app
   BuildImage:
     Type: String
-    Default: "aws/codebuild/dotnetcore2.1"
+    Default: "aws/codebuild/windows-base:2.0"
     Description: The build image to use for building the app
 
 Resources:
