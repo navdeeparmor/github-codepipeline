@@ -15,7 +15,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri:
-          Bucket: github-codepipeline-1-pipelineartifactsbucket-yrrpozcsam8b
+          Bucket: github-codepipeline-2-pipelineartifactsbucket-yrrpozcsam8b
           Key: "github-codepipeline-/SourceCode/7qbXB3U.zip"
       Handler: CodepipelineLambda::CodepipelineLambda.Function::FunctionHandler
       Runtime: dotnetcore2.1
