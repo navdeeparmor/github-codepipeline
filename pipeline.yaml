@@ -129,7 +129,7 @@ Resources:
         Type: CODEPIPELINE
         EncryptionDisabled: true
       Environment:
-        ComputeType: BUILD_GENERAL1_SMALL
+        ComputeType: BUILD_GENERAL1_MEDIUM
         EnvironmentVariables:
           - Name: ENVIRONMENT
             Type: PLAINTEXT
