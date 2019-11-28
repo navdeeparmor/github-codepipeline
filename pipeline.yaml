@@ -40,8 +40,8 @@ Parameters:
     
   BuildType:
     Type: String
-    Default: "LINUX_CONTAINER"
-    Description: The build container type to use for building the app
+    Default: "WINDOWS_CONTAINER"
+    Description: The build container type to use for building the application
   BuildComputeType:
     Type: String
     Default: "BUILD_GENERAL1_MEDIUM"
