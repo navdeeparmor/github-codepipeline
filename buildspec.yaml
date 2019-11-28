@@ -11,6 +11,4 @@ phases:
       - dotnet publish -c release -o ./build_output CodepipelineLambda/CodepipelineLambda/CodepipelineLambda.csproj
 artifacts:
   files:
-    - CodepipelineLambda/build_output/**/*
-    - scripts/**/*
-    - appspec.yml
+    - CodepipelineLambda/CodepipelineLambda/CodepipelineLambda/build_output/**/*
