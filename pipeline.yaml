@@ -40,15 +40,15 @@ Parameters:
     
   BuildType:
     Type: String
-    Default: "WINDOWS_CONTAINER"
+    Default: "LINUX_CONTAINER"
     Description: The build container type to use for building the application
   BuildComputeType:
     Type: String
-    Default: "BUILD_GENERAL1_MEDIUM"
+    Default: "BUILD_GENERAL1_SMALL"
     Description: The build compute type to use for building the app
   BuildImage:
     Type: String
-    Default: "aws/codebuild/windows-base:1.0"
+    Default: "aws/codebuild/standard:2.0"
     Description: The build image to use for building the app
 
 Resources:
@@ -129,13 +129,13 @@ Resources:
         Type: CODEPIPELINE
         EncryptionDisabled: true
       Environment:
-        ComputeType: BUILD_GENERAL1_MEDIUM
+        ComputeType: BUILD_GENERAL1_SMALL
         EnvironmentVariables:
           - Name: ENVIRONMENT
             Type: PLAINTEXT
             Value: staging
         Image: !Ref BuildImage
-        Type: WINDOWS_CONTAINER
+        Type: LINUX_CONTAINER
       ServiceRole: !Ref CodeBuildRole
       Source:
         Type: CODEPIPELINE
