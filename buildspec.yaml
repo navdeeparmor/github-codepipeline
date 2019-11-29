@@ -13,7 +13,7 @@ phases:
       - echo Build started on `date`
       - dotnet publish -c release -o ./build_output CodepipelineLambda/CodepipelineLambda/CodepipelineLambda.csproj
       - export BUCKET=vulnerability-scan-sam
-      - aws cloudformation package --template-file application.yaml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
+      - aws cloudformation package --template-file CodepipelineLambda/application.yaml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
 artifacts:
   type: zip
   files:
