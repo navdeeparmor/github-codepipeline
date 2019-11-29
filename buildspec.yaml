@@ -15,5 +15,8 @@ phases:
       - export BUCKET=TestBucket
       - aws cloudformation package --template-file application.yaml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
 artifacts:
+  type: zip
   files:
     - CodepipelineLambda/CodepipelineLambda/build_output/**/*
+    - template.yml
+    - outputtemplate.ym

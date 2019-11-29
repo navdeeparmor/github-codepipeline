@@ -14,7 +14,7 @@ Resources:
   CodepipelineLambda:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: ./CodepipelineLambda/CodepipelineLambda/build_output/CodepipelineLambda
+      CodeUri: ./CodepipelineLambda/CodepipelineLambda/
       Handler: CodepipelineLambda::CodepipelineLambda.Function::FunctionHandler
       Runtime: dotnetcore2.1
       Environment:
