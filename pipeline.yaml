@@ -118,7 +118,7 @@ Resources:
             Capabilities: CAPABILITY_IAM,CAPABILITY_AUTO_EXPAND
             RoleArn: !GetAtt CloudformationRole.Arn
             StackName: !Ref ApplicationStackName
-            TemplatePath: !Sub "StagingBuild::outputtemplate.yaml"
+            TemplatePath: !Sub "StagingBuild::4FekZ9Q::outputtemplate.yaml"
           RunOrder: 1
           
   StagingBuild:
