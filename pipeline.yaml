@@ -112,7 +112,7 @@ Resources:
             Provider: CloudFormation
             Version: '1'
           InputArtifacts:
-            - Name: SourceCode
+            - Name: StagingBuild
           Configuration:
             ActionMode: CREATE_UPDATE
             Capabilities: CAPABILITY_IAM,CAPABILITY_AUTO_EXPAND
